@@ -10,14 +10,14 @@
 }
 
 .header{
-    grid-column: 1 / 5;
+    grid-column: 1 / 13;
     grid-row: 1 / 3;
 
     background-color: greenyellow;
 }
 
 .nav{
-    grid-column: 1 / 5;
+    grid-column: 1 / 13;
     grid-row: 3 / 4;
 
     background-color: mediumaquamarine;
@@ -25,7 +25,7 @@
 }
 
 .conten{
-    grid-column: 1 / 5;
+    grid-column: 1 / 13;
     grid-row: 4 / 8;
 
     background-color: fuchsia ;
@@ -33,16 +33,16 @@
 
 
 .footer{
-    grid-column: 1 / 5;
+    grid-column: 1 / 13;
     grid-row: 8 / 9;
 
     background-color: orangered;
 }
 
 
-body{
-    background-color: #e7e6e6;
-}
+body {
+    background-image: url("Images\museo2.jpg");
+  }
 
 
 /* barra de navegacion */

@@ -1,0 +1,41 @@
+body {
+  background: url("../Images/museo2.jpg") no-repeat fixed center center;
+  /* background-color: darkgray; */
+  background-size: cover;
+} 
+
+h1 {
+  text-align: center;
+}
+
+.obras-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.obra {
+  flex-basis: calc(25% - 20px);  /* Para que siempre mantenga los 4 cuadros y no se baje por tener distinto ancho */
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.591);
+  background-color: rgba(19, 125, 167, 0.703);
+
+  
+}
+
+.obra img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 0 10px 5px rgb(126, 73, 16);
+}
+
+.obra h3 {
+  margin-top: 10px;
+}
+
+.obra p {
+  margin-top: 5px;
+}
+  
