@@ -21,10 +21,10 @@ body {
         grid-template-areas: "header header header header"
                              "nav nav nav nav"
                              "borde slider slider aside"
-                             "borde slider slider aside"
-                             "borde slider slider aside"
+                             /* "borde slider slider aside"
+                             "borde slider slider aside" */
                              "footer footer footer footer ";
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 1fr 1/2fr 60% 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
          
       }
@@ -101,23 +101,23 @@ body {
   
 
 
-
-
-
-
-
-
-
-
-
-
-
 .borde{
     grid-area: borde;
 }
 
 .slider{
     grid-area: slider;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.slider-item{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-height: 90%;
+    /* display:none; */
 }
 
 .aside{
