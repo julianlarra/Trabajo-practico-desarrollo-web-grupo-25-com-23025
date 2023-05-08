@@ -60,6 +60,58 @@ body {
     
 }
 
+
+/** Barra de navegacion estilos  --------------  */
+
+.nav-enlace{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 3px 0 0 0 ;
+    text-decoration: none;
+    border-radius: 9px;
+    
+  }
+  
+  .nav-enlace:hover{
+    transition: background 0.3s ease;
+    background:rgb(226, 226, 224);
+    cursor: pointer;
+  }
+  
+  nav{
+    background:rgb(5, 5, 5) ;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .nav-boton{
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 248, 248);
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    display: none;
+    
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 .borde{
     grid-area: borde;
 }
@@ -72,12 +124,43 @@ body {
     grid-area: aside;
 }
 
-.footer{
-    
-    grid-area: footer;
-    background-color: orangered;
-}
 
+
+/* #################### prueba1 */
+.footer {
+    grid-area: footer;
+    background:rgba(0, 0, 0, 0.6) ;
+    width: 100%;
+    
+    
+    color: rgb(255, 255, 255);
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  
+  .footer a{ text-decoration: none; color: #fff;
+             padding: 0 0;
+             }
+                
+   
+    
+    
+.footer a:hover{
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0px 0px 28px 10px rgba(192, 190, 190, 0.48)
+    
+  
+     }
 
 body{
     background-color: #e7e6e6;
