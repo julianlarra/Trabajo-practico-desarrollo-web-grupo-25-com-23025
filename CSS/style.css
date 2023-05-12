@@ -25,7 +25,7 @@ body {
                              "borde slider slider aside" */
                              "footer footer footer footer ";
         /* grid-template-rows: 1fr 1/2fr 70% 1fr; */
-        grid-template-rows:150px 50px 60% 126px;
+        grid-template-rows:150px 70px 60% 100px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row-gap: 20px;
          
@@ -111,10 +111,11 @@ body {
     grid-area: borde;
 }
 
+/* Determina el area que ocupa el slider */
 .slider{
     grid-area: slider;
     max-width: 100%;
-    height: 100%;
+    height: auto;
     
 }
 
@@ -122,9 +123,15 @@ body {
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    max-height: 100%;
-    /* display:none; */
+    width: 70%;
+    max-height: 70%;
+    
+    margin:10px  auto;
+
+    /* prueba */
+    
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px 5px rgba(168,168,168,1);
 }
 
 .aside{
