@@ -56,28 +56,49 @@ body {
 
 
 
-.nav{
-   grid-area: nav;
-   
 
-    
-}
 
 
 /** Barra de navegacion estilos  --------------  */
 
+.nav{
+  grid-area: nav;
+    
+  
+  display: flex;
+  justify-content: space-between;
+  
+  
+  
+}
+
+.nav-logo{
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 248, 248);
+  font-weight: bold;
+  padding: 10px 5%;
+  border: 2px solid #fff;
+  display: none;
+
+ 
+  
+  }
+
 .nav-enlace{
-    display: inline-block;
+    display: inline-block; 
     background: rgba(0, 0, 0, 0.4);
     color: rgb(255, 255, 255);
     font-weight: bold;
-    padding: 10px 6%;
-    margin: 3px 1% 0 1% ;
     text-decoration: none;
     border-radius: 9px;
-  
     
+    padding: 10px 6%;
+    margin: 3px 1% 0 1% ;
+   
     
+
+   
   }
   
   .nav-enlace:hover{
@@ -86,24 +107,9 @@ body {
     cursor: pointer;
   }
   
-  nav{
-    background:rgb(5, 5, 5) ;
-    display: flex;
-    justify-content: space-around;
-    
-    
-  }
   
-  .nav-boton{
-    display: inline-block;
-    background: rgb(0, 0, 0);
-    color: rgb(255, 248, 248);
-    font-weight: bold;
-    padding: 10px 5%;
-    border: 2px solid #fff;
-    display: none;
-    
-    }
+  
+  
   
 
 
@@ -181,8 +187,8 @@ body{
 }
 
 
-/* punto de corte 835px  */
-@media (max-width :835px) {
+/* punto de corte 932px  */
+@media (max-width :932px) {
 
     nav {
       flex-direction: column;
@@ -195,11 +201,11 @@ body{
       margin: 10px 0;
     }
   
-    .nav-boton{
+    .nav-logo{
       display: inline-block;
     }
   
-    .nav-boton:hover{
+    .nav-logo:hover{
       transition: background 0.3s ease;
       background:rgb(192, 192, 190);
       cursor: pointer;
