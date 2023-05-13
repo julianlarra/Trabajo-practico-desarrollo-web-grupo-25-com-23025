@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The artificial art gallery</title>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-   
+    <script src="https://kit.fontawesome.com/04ced979f6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     
@@ -27,7 +27,10 @@
         </div>
 
         <div class="nav">
-            <button class="nav-logo" onclick="accion()">Menu</button>
+            <button id="nav-toggle" class="nav-logo" onclick="accion()">
+                <i class="fa-solid fa-bars fa-2xl"></i> 
+                <span>Menu</span>
+            </button>
             
             <a href="index.html" class="nav-enlace desaparece"> Principal</a>
             <a href="galeriaPaisajes.html" class="nav-enlace desaparece">Galeria de imagenes</a>
