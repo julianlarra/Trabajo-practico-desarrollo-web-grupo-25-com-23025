@@ -21,10 +21,8 @@ body {
         grid-template-areas: "header header header header"
                              "nav nav nav nav"
                              "borde slider slider aside"
-                             /* "borde slider slider aside"
-                             "borde slider slider aside" */
                              "footer footer footer footer ";
-        /* grid-template-rows: 1fr 1/2fr 70% 1fr; */
+       
         grid-template-rows:150px 70px 60% 100px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row-gap: 20px;
@@ -72,15 +70,19 @@ body {
   
 }
 
-.nav-logo{
-  display: inline-block;
-  background: rgb(0, 0, 0);
-  color: rgb(255, 248, 248);
-  font-weight: bold;
-  padding: 10px 5%;
-  border: 2px solid #fff;
-  display: none;
 
+.nav-logo{
+  display: inline-block; 
+  background: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 9px;
+  text-transform: uppercase;
+  width: max-content;
+  line-height: 45px;
+  padding: 0 10%;
+  display: none;
  
   
   }
@@ -125,6 +127,11 @@ body {
     grid-area: slider;
     max-width: 100%;
     height: auto;
+
+    display: flex; 
+    
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -132,10 +139,10 @@ body {
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 70%;
     max-height: 70%;
-    
-    margin:10px  auto;
+    /* margin:10px  auto; */
 
     /* prueba */
     
@@ -190,22 +197,35 @@ body{
 }
 
 
-/* punto de corte 932px  */
+/* punto de corte 932px  ##############################################################################*/
 @media (max-width :932px) {
 
-    nav {
-      flex-direction: column;
+    .contenedor{
+
       
+      grid-template-areas: "header header header header"
+                            "nav nav nav nav"
+                            "extension slider slider aside"
+                            "footer footer footer footer ";
+      
+    }
+
+    .nav {
+      
+      flex-direction: column;
+      /* display: inline-flex; */
     }
    
     .nav-enlace{
-      padding: 10px 30px;
-      background: darkgray;
+      padding: 10px 3%;
+      background: rgba(0, 0, 0, 0.5);
       margin: 10px 0;
     }
-  
+    
+    
     .nav-logo{
-      display: inline-block;
+      padding: 0 10%;
+      display:inline-block;    
     }
   
     .nav-logo:hover{
@@ -217,3 +237,64 @@ body{
     .desaparece{
       display: none;
     }
+
+  }
+
+    /* punto de corte 768px  */
+@media (max-width :768px) { 
+
+  .nav-logo{
+    padding: 0 8%;
+  }
+  
+  
+  
+  .slider-item{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    max-height: 85%;
+    
+    margin:10px  auto;
+
+    /* prueba */
+    
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px 5px rgba(168,168,168,1);
+}
+}
+
+
+/* punto de corte 576px  */
+@media (max-width :576px) {
+
+  .nav-logo{
+    padding: 0 6%;
+  }
+
+  .slider-item{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-height: 100%;
+    
+    margin:10px  auto;
+
+    /* prueba */
+    
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px 5px rgba(168,168,168,1);
+}
+
+
+}
+
+
+/* 
+    Para dispositivos móviles pequeños (como teléfonos inteligentes): 576px o menos.
+Para dispositivos móviles medianos: 576px a 768px.
+Para dispositivos móviles grandes y tablets: 768px a 992px.
+Para dispositivos de escritorio y laptops: 992px a 1200px.
+Para pantallas más grandes: 1200px o más. */
