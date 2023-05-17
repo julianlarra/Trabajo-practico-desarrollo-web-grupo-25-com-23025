@@ -160,7 +160,7 @@ body {
 
 
 
-/* #################### prueba1 */
+
 
 
     .footer {
@@ -203,45 +203,54 @@ body{
 }
 
 
-/* punto de corte 932px  ##############################################################################*/
+/* #################### Punto de corte 932px  ##############################################################################*/
 @media (max-width :932px) {
 
     .contenedor{
 
       
+       
       grid-template-areas: "header header header header"
                             "nav nav nav nav"
-                            "extension slider slider aside"
+                            "article article article article"
+                            "borde slider slider aside"
                             "footer footer footer footer ";
+
+              grid-template-rows:150px 70px auto 600px 100px;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-row-gap: 20px;
       
     }
 
     .nav {
-      
+      position: sticky;
       flex-direction: column;
-      /* display: inline-flex; */
+      
     }
    
     .nav-enlace{
       padding: 10px 3%;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgb(207, 196, 196);
       margin: 10px 0;
       min-width: 189px;
+      color: #1b1818;
     }
 
     
     .nav-logo i {
       display: none;
+      
     }
     
     .nav-logo{
+      
       padding: 0 10%;
       display:inline-block;    
     }
   
     .nav-logo:hover{
       transition: background 0.3s ease;
-      background:rgb(192, 192, 190);
+      background:rgba(85, 85, 84, 0.185);
       cursor: pointer;
     }
     
