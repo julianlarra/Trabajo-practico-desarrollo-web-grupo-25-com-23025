@@ -389,6 +389,9 @@ body{
   flex-basis: calc(79% - 20px);  
  }
 
+ .obra img.ampliada {
+  max-width: 90%;
+ }
 }  
 
 
