@@ -89,7 +89,6 @@ obra7.addEventListener('click', () => {
 isAmpliada = !isAmpliada;
 });
 
-
 const obra8 = document.getElementById('obra8');
 
 obra8.addEventListener('click', () => {
@@ -101,6 +100,7 @@ obra8.addEventListener('click', () => {
     
 isAmpliada = !isAmpliada;
 });
+
 
 
 const obra9 = document.getElementById('obra9');
@@ -222,7 +222,7 @@ isAmpliada = !isAmpliada;
 
 const obra18 = document.getElementById('obra18');
 
-obra8.addEventListener('click', () => {
+obra18.addEventListener('click', () => {
   if (isAmpliada) {
     obra18.classList.remove('ampliada');
   } else {

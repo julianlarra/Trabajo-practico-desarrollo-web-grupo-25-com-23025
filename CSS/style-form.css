@@ -1,0 +1,342 @@
+body {
+    background: url("../img/museo2.jpg") no-repeat fixed center center; 
+ 
+   background-size: cover;
+   color: #000;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* creamos las columnas y filas del grid-container*/
+
+.contenedor{
+   
+       display: grid;
+       width: 100%;
+       height: auto;
+       grid-template-areas: "header header header header"
+                            "nav nav nav nav"
+                            "form form form form"
+                            
+                            "footer footer footer footer ";
+      
+       grid-template-rows:150px 70px auto  100px;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-row-gap: 20px;
+        
+     }
+
+
+.header{
+       grid-area: header;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+       text-transform: uppercase;
+      
+   }
+
+.titular{
+       color: white;
+       text-align: center;
+       display: grid;
+       
+       justify-content: center; 
+   
+       align-items: flex-end;
+       padding-top: 2%;
+   }
+
+
+
+
+
+
+/** Barra de navegacion estilos  --------------  */
+
+.nav{
+ grid-area: nav;
+   
+ 
+ display: flex;
+ justify-content: space-between;
+ 
+ 
+ 
+}
+
+
+.nav-logo{
+ display: inline-block; 
+ background: rgba(0, 0, 0, 0.4);
+ color: rgb(255, 255, 255);
+ font-weight: bold;
+ text-decoration: none;
+ border-radius: 9px;
+ text-transform: uppercase;
+ width: max-content;
+ line-height: 45px;
+ padding: 0 10%;
+ display: none;
+
+ 
+ }
+
+.nav-enlace{
+   display: inline-block; 
+   background: rgba(0, 0, 0, 0.4);
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 9px;
+   text-transform: uppercase;
+   width: max-content;
+   line-height: 45px;
+   
+   padding: 10px 3%;
+   margin: 3px 0% 0 0% ;
+  
+   
+
+  
+ }
+ 
+ .nav-enlace:hover,
+ .nav-logo:focus{
+   transition: background 0.3s ease;
+   background:rgb(226, 226, 224);
+   cursor: pointer;
+ }
+
+ .form{
+    grid-area: form;
+    background: rgba(199, 199, 199, 0.7);
+ }
+
+.logo{
+    text-align: center;
+    font-size: 3em;
+    }
+
+.logo span {
+    color:#b95050;
+    }
+
+
+
+.footer {
+    grid-area: footer;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+     display: flex;
+    justify-content: space-around; 
+    align-items: center;
+  }
+
+.footer span {
+    font-size: medium;
+  }
+
+.footer a {
+    text-decoration: none;
+    color: #cc6e6e;
+    padding: 0 0;
+  }
+
+.footer h3{
+  display: contents;
+  
+  
+}
+
+              
+.footer a:hover {
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 0px 28px 10px rgba(192, 190, 190, 0.48);
+}
+  
+
+
+body{
+  background-color: #e7e6e6;
+}
+
+/* ######### form ############################################################################################# */
+
+
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+
+.contact-form {
+    background-color: #222222b4;
+}
+
+
+
+
+.contact-form {
+    margin: 0;
+    padding: 1em;
+    
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .5em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #c44747;
+}
+
+.contact-form form button {
+    background: #b70e21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0; 
+
+}
+
+.contact-info { 
+    background-color: #d8d5d5;
+}
+
+.contact-info h4,
+.contact-info ul
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+
+}
+
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: .3em;
+
+}
+
+/* Pantallas Grandes */
+
+@media (min-width: 700px) { 
+    body {
+        padding: 0 4rem;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+
+    .contact-info h4
+    .contact-info ul
+    .contact-info p {
+        padding: 1em;
+        text-align: left;
+    }
+}
+
+
+/* ################################################################################################################ */
+
+/* #################### Punto de corte 932px  ##############################################################################*/
+@media (max-width :932px) {
+
+   
+
+    .nav {
+      position: sticky;
+      flex-direction: column;
+      
+    }
+   
+    .nav-enlace{
+      padding: 10px 3%;
+      background: rgb(207, 196, 196);
+      margin: 10px 0;
+      min-width: 189px;
+      color: #1b1818;
+    }
+
+    
+    .nav-logo i {
+      display: none;
+      
+    }
+    
+    .nav-logo{
+      
+      padding: 0 10%;
+      display:inline-block;    
+    }
+  
+    .nav-logo:hover,
+    .nav-logo:focus{
+      transition: background 0.3s ease;
+      background:rgba(85, 85, 84, 0.185);
+      cursor: pointer;
+    }
+    
+    .desaparece{
+      display: none;
+    }
+
+  }
+
+  
+/* ########################### punto de corte 576px ########################################################## */
+@media   (max-width :576px)  {
+
+ 
+    .nav-enlace{
+      padding: 0px 3%;
+      
+      margin: 4px 0;
+    }
+    .nav-logo{
+      padding: 0 6%;
+      display: inline;
+    }
+  
+   .nav-logo i{
+    display: inline;
+   }
+  
+   .nav-logo span{
+    display: none;
+   } 
+  
+   
+    
+    .footer span {
+      font-size: x-small;
+    }
+}

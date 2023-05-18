@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The artificial art gallery</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/04ced979f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/style-form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+     <!-- ANIMATE.CSS -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+     integrity="sha384-500BUHEmvpQ+11W4y57PTFmhCaXp0ML 5d60M1M7uH2+nqUivzIebhnd0JK28anvf"
+     crossorigin="anonymous">
+ 
+     <!-- CUSTOM.CSS -->
+     <link rel="stylesheet" href="CSS/main.css">
+     
+ 
+ 
+     <!-- FONT AWESOME-->
+     <script src="https://kit.fontawesome.com/c3d2629fa5.js" crossorigin="anonymous"></script>
+
+    <!--Generar una plantilla base de estructura html, teniendo en cuenta las secciones los puntos de cortes
+         y textos que son comunes a odoas las paginas del sitio. Luego duplicar y generar cada pagina con su 
+         contenido base -->
+         
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="header">
+            <div class="titular">
+            <h1>The artificial art gallery</h1>
+            <h2> Arte digital creado por inteligencia artificial</h2>
+            </div>
+        </div>
+
+        <div class="nav">
+            <button id="nav-toggle" class="nav-logo" onclick="accion()">
+                <i class="fa-solid fa-bars fa-2xl"></i> 
+                <span>Menu</span>
+            </button>
+            
+            <a href="index.html" class="nav-enlace desaparece"> Principal</a>
+            <a href="galeria.html" class="nav-enlace desaparece">Galeria de imagenes</a>
+            <a href="/api.html" class="nav-enlace desaparece">Consulta de API</a>
+            
+            <a href="formulario.html" class="nav-enlace desaparece">Contacto</a>
+            
+
+        </div>
+
+        
+        <div class="form">
+            <h1 class="logo">Contacto <span>Escribinos</span></h1>
+    
+            <div class="contact-wrapper">
+    
+                <div class="contact-form">
+    
+                    <h3>Dejanos tu mensaje</h3>
+    
+                    <form action="">
+    
+                        <P>
+                            <label for="Fullname">Fullname</label>
+                            <input type="text" name="Fullname" id="Fullname">
+                        </P>
+    
+                        <p>
+                            <label for="Email">Email Addres</label>
+                            <input type="email" name="Email" id="Email">
+                        </p>
+    
+                        <p>
+                            <label for="Affair">Phone</label>
+                            <input type="text" name="Phone" id="phone">
+                        </p>
+    
+                        <p class="block">
+                            <label for="">Message</label>
+                            <textarea name="Message" rows="3"></textarea>
+                        </p>
+    
+                        <p class="block">
+                            <button type="submit">
+                                Send
+                            </button>
+                        </p>
+    
+                    </form>
+    
+                </div>
+    
+                <div class="contact-info">
+                    <h4>Acerca de nosotros</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Argentina</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +54 1111111</li>
+                        <li><i class="fa-solid fa-inbox"></i> theartgalleryia@mail.com</li>
+                    </ul>
+    
+                    <p>The Artificial Art Gallery" es una plataforma digital dedicada a exhibir y promover el arte creado por 
+                        inteligencia artificial. Presenta una colección única de obras de arte digital generadas por algoritmos 
+                        y modelos de IA, explorando la intersección entre la creatividad humana y la capacidad generativa de las
+                         máquinas.
+
+                        <!-- En este espacio virtual, los visitantes pueden sumergirse en un mundo de imágenes cautivadoras y conceptos
+                         artísticos innovadores. Desde paisajes abstractos hasta retratos surrealistas, cada obra de arte exhibida
+                          en la galería es el resultado de algoritmos complejos que han aprendido a interpretar y recrear el arte 
+                          en sus propias expresiones únicas. -->
+                        
+                        <!-- Ya sea que se trate de amantes del arte, entusiastas de la tecnología o simplemente curiosos, 
+                        "The Artificial Art Gallery" invita a todos a explorar las infinitas posibilidades creativas que
+                         surgen cuando la inteligencia artificial se fusiona con el arte. Es un espacio donde la imaginación y 
+                         la tecnología se encuentran, ofreciendo una experiencia única y estimulante para admirar y reflexionar
+                          sobre el futuro de la creatividad en la era digital. -->
+                    </p>
+    
+                    <!-- <p>Company.com</p> -->
+                </div>
+    
+            </div>
+        </div>
+    
+        
+
+       
+
+        <div class="footer">
+             
+         <h3> 
+            <div class="elemento">
+            <a class="fa-solid fa-house " href="/form.html" > <span>    Inicio </span></a>
+            </div>
+            
+            <div class="elemento">
+            <a class="fa-regular fa-envelope" href="index.html" > <span>Contacto </span></a>
+            </div>
+            
+            <div class="elemento">
+            <a class="fa-brands fa-instagram" href="https://www.instagram.com/theartificialartgallery/?igshid=MzRlODBiNWFlZA%3D%3D" > <span>Instagram </span></a>
+            </div>
+            
+            <div class="elemento">
+            <a class="fa-regular fa-registered" href="index.html" > <span> Grupo 25. </span></a>
+            </div>
+            
+            
+        </h3>
+        </div>
+        
+    </div>
+    <script src="/Js/form.js"></script>
+</body>
+</html>
