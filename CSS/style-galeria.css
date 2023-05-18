@@ -269,23 +269,9 @@ body{
 
 
 /* #################### Punto de corte 932px  ##############################################################################*/
-/* @media (max-width :932px) {
+ @media (max-width :932px) {
 
-   .contenedor{
-
-     
-      
-     grid-template-areas: "header header header header"
-                           "nav nav nav nav"
-                           "article article article article"
-                           "borde slider slider aside"
-                           "footer footer footer footer ";
-
-             grid-template-rows:150px 70px auto 600px 100px;
-             grid-template-columns: 1fr 1fr 1fr 1fr;
-             grid-row-gap: 20px;
-     
-   }
+  
 
    .nav {
      position: sticky;
@@ -330,17 +316,7 @@ body{
 
    @media (max-width :768px) { 
 
- /* .nav-logo{
-   padding: 0 8%;
- }
-  
- .nav-enlace{
-   padding: 10px 0%;
-   background: rgba(0, 0, 0, 0.5);
-   margin: 10px 0;
-   font-size: small;
-   min-width: 155px;
- } */
+ 
 
  
  .slider-item{
@@ -356,15 +332,19 @@ body{
    
    border-radius: 4px;
    box-shadow: 0px 0px 25px 5px rgba(168,168,168,1);
-}
-}
+  }
 
+ .obra {
+   flex-basis: calc(39% - 20px);  
+  }
+
+}
 
 /* ########################### punto de corte 576px ########################################################## */
 @media   (max-width :576px)  {
 
 
- /* .nav-enlace{
+  .nav-enlace{
    padding: 0px 3%;
    
    margin: 4px 0;
@@ -380,9 +360,9 @@ body{
 
 .nav-logo span{
  display: none;
-} */
+} 
 
-/* .slider{
+.slider{
  height: fit-content;
 }
 
@@ -403,6 +383,10 @@ body{
  
  .footer span {
    font-size: x-small;
+ }
+
+ .obra {
+  flex-basis: calc(79% - 20px);  
  }
 
 }  
