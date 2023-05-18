@@ -10,7 +10,7 @@
                          "galeria galeria galeria galeria"
                          "footer footer footer footer ";
    
-    grid-template-rows:150px  auto 600px 100px;
+    grid-template-rows:150px  auto auto 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 20px;
      
@@ -19,9 +19,9 @@
 /* h1 {
     text-align: center; 
     color: rgb(220, 220, 220);
-  }
+  } */
   
-  h2 {
+  /* h2 {
     color: rgb(220, 220, 220);
   } */
 
@@ -88,6 +88,22 @@
     transition: background 0.3s ease;
     background:rgb(226, 226, 224);
     cursor: pointer;
+  }
+
+
+  .tipo-art{
+    display: flex;
+    background: rgb(8 7 7 / 69%);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 9px;
+    text-transform: uppercase;
+    width: max-content;
+    line-height: 45px;
+    padding: 8px 3%;
+    margin: 2px 0% 0 10%;
+
   }
 /* 
   ################################################################################################################# */
