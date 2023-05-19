@@ -115,6 +115,8 @@ body {
  .form{
     grid-area: form;
     background: rgba(199, 199, 199, 0.7);
+    font-weight: bold;
+    border-radius: 9px;
  }
 
 .logo{
