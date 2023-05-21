@@ -1,4 +1,12 @@
 
+  
+
+
+
+  
+/*############################333*/  
+
+
 .contenedor{
    
     display: grid;
@@ -6,112 +14,19 @@
     height: auto;
     grid-template-areas: "header header header header"
                          "nav nav nav nav"
-                         /* "article article article article" */
-                         "galeria galeria galeria galeria"
+                         "article article article article" 
+                         "espacio galeria galeria galeria"
                          "footer footer footer footer ";
    
-    grid-template-rows:150px  auto auto 100px;
+    grid-template-rows:150px  auto auto auto 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 20px;
      
   }
 
-/* h1 {
-    text-align: center; 
-    color: rgb(220, 220, 220);
-  } */
   
-  /* h2 {
-    color: rgb(220, 220, 220);
-  } */
-
-  .galeria{
-    grid-area: galeria;
-  }
-  
-  .obras-container {
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .obra {
-    
-    flex-basis: calc(25% - 20px);  
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.591);
-    background-color: rgba(159, 174, 181, 0.703);
-  
-  
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-    }
-  
-  
-  .obra img {
-    max-width: 100%;
-    max-height: 100%;
-    box-shadow: 0 0 10px 25px rgba(168, 168, 168, 0.685);
-    cursor: pointer;
-    object-fit: cover;
-    position: relative;
-    z-index: 1;
-    transition: transform 1s ;
-    transform: scale(1);
-  }
-  
-  .obra h3 {
-    margin-top: 10px;
-  }
-  
-  .obra p {
-    margin-top: 5px;
-  }
-  
-  
-  .obra img.ampliada {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    z-index: 9999;
-  }
-
-
-  .obra:hover,
-  .obra:focus{
-    transition: background 0.3s ease;
-    background:rgb(226, 226, 224);
-    cursor: pointer;
-  }
-
-
-  .tipo-art{
-    display: flex;
-    background: rgb(8 7 7 / 69%);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 9px;
-    text-transform: uppercase;
-    width: max-content;
-    line-height: 45px;
-    padding: 8px 3%;
-    margin: 2px 0% 0 10%;
-
-  }
-/* 
-  ################################################################################################################# */
-
-  
-
 body {
-    background: url("/img/museo2.jpg") no-repeat fixed center center; 
+   background: url("/img/museo2.jpg") no-repeat fixed center center; 
  
    background-size: cover;
    color: #000;
@@ -208,26 +123,49 @@ body {
    background:rgb(226, 226, 224);
    cursor: pointer;
  }
- 
- 
-/* .article{
- grid-area: article;
- background-color: rgba(15, 15, 15, 0.781);
- border-radius: 40px;
- text-align: center;
- padding: 0% 5%;
- margin: 0 5%; 
- color: #fff;
-} 
-  */
+
+
+  
+  
  
 
+  .article{
+    grid-area: article;
+    background-color: rgba(15, 15, 15, 0.781);
+    border-radius: 40px;
+    text-align: center;
+    padding: 0% 5%;
+    margin: 0 5%; 
+    color: #fff;
+    
+  } 
+  .article h1 a{
+    color: white;
+    text-decoration: none;
+  }
 
 
+  .galeria-api{
+    grid-area: galeria;
+  }
 
+  .galeria img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0 0 10px 10px rgba(168, 168, 168, 0.685);
+  }
+  .galeria h2{
+    color: white;
+  }
 
+ 
+/* 
+  ################################################################################################################# */
 
-
+  
    .footer {
      grid-area: footer;
      background: rgba(0, 0, 0, 0.6);
@@ -392,6 +330,11 @@ body{
  .obra img.ampliada {
   max-width: 90%;
  }
+
+.galeria img{
+    max-width: 100%;
+}
+
 }  
 
 
