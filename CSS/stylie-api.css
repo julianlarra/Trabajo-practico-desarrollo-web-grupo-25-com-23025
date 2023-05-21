@@ -20,7 +20,7 @@
    
     grid-template-rows:150px  auto auto auto 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
      
   }
 
@@ -144,6 +144,13 @@ body {
     text-decoration: none;
   }
 
+  .article a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+ 
 
   .galeria-api{
     grid-area: galeria;
@@ -160,6 +167,8 @@ body {
   .galeria h2{
     color: white;
   }
+
+  
 
  
 /* 
